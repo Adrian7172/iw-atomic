@@ -1,7 +1,7 @@
 import { Box, Card, CardContent } from "@mui/material";
 import React from "react";
 import Content from "../Card";
-import { IoBulbOutline,IoInfiniteOutline } from "react-icons/io5";
+import { IoBulbOutline, IoInfiniteOutline } from "react-icons/io5";
 import { IoIosNutrition } from "react-icons/io";
 
 const InfoCard = () => {
@@ -131,8 +131,8 @@ const InfoCard = () => {
           justifyContent: "space-between",
         }}
       >
-        {cardsContent.map((data: object) => {
-          return <Content {...data} />;
+        {cardsContent.map((data: object, index) => {
+          return <Content key={index} {...data} />;
         })}
       </CardContent>
     </Card>
