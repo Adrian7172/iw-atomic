@@ -1,6 +1,6 @@
 import { Box, Card, CardContent } from "@mui/material";
 import React from "react";
-import Content from "../Card";
+import Content from "../card";
 import { IoBulbOutline, IoInfiniteOutline } from "react-icons/io5";
 import { IoIosNutrition } from "react-icons/io";
 

@@ -9,8 +9,8 @@ const Video = () => {
         position: "absolute",
         background: "transparent",
         border: " 2px solid rgba(0,0,0,.1)",
-        right: "26.5vw",
-        top: "36rem",
+        right: "27.5rem",
+        top: "13.5rem",
         display: " grid",
         placeItems: "center",
         borderRadius: "50%",
@@ -22,8 +22,8 @@ const Video = () => {
           background: "transparent",
           width: "9rem",
           height: "9rem",
-          right: "26.15vw",
-          top: "35.5rem",
+          right: "27rem",
+          top: "13rem",
         },
       }}
     >
@@ -32,10 +32,6 @@ const Video = () => {
           color: "#000",
           width: "4.2rem",
           height: "4.2rem",
-          // ":hover": {
-          //     transition: "all 0.3s ease ",
-          //     margin: "2rem"
-          //   }
         }}
       />
     </Box>

@@ -18,7 +18,7 @@ const Main = () => {
     >
       <Navbar />
       <Section />
-      <Video />
+      {/* <Video /> */}
     </Box>
   );
 };
