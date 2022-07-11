@@ -100,7 +100,7 @@ export const Navbar = () => {
                   <Typography
                     sx={{
                       textTransform: "uppercase",
-                      color: Active && "#000",
+                      color: Active ? "#000": "",
                       fontSize: "1.28rem",
                       padding: "2rem 0.5rem",
                       letterSpacing: "0.15rem",
