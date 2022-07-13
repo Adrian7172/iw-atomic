@@ -1,6 +1,6 @@
 import React from "react";
 import CountUp from "react-countup";
-import { Typography } from "@mui/material";
+import { Container, Typography } from "@mui/material";
 import Grid from "@mui/material/Grid";
 import { Box } from "@mui/system";
 
@@ -287,103 +287,111 @@ const Images = () => {
       <Box
         sx={{
           width: "100%",
-          height: "35rem",
+          height: "32rem",
           background: "#0389ff",
           display: "flex",
           alignItems: "center",
           justifyContent: "center",
         }}
       >
-        <Box
+        <Container
           sx={{
             display: "flex",
             alignItems: "center",
-            flexDirection: "column",
-            width: "37.5rem",
+            justifyContent: "space-between",
           }}
         >
-          <Typography
+          <Box
             sx={{
-              fontFamily: "Work Sans, sans-serif",
-              color: "white",
-              fontSize: "5rem",
-              marginBottom: "1rem",
+              display: "flex",
+              alignItems: "center",
+              flexDirection: "column",
+              width: "37.5rem",
             }}
           >
-            <CountUp end={99399} duration={5} />
-          </Typography>
-          <Typography
+            <Typography
+              sx={{
+                fontFamily: "Work Sans, sans-serif",
+                color: "white",
+                fontSize: "5rem",
+                marginBottom: "1rem",
+              }}
+            >
+              <CountUp end={99399} duration={5} />
+            </Typography>
+            <Typography
+              sx={{
+                fontFamily: "Work Sans, sans-serif",
+                color: "white",
+                fontSize: "1.5rem",
+                textTransform: "uppercase",
+                opacity: "0.5",
+              }}
+            >
+              Lines of codes
+            </Typography>
+          </Box>
+          <Box
             sx={{
-              fontFamily: "Work Sans, sans-serif",
-              color: "white",
-              fontSize: "1.5rem",
-              textTransform: "uppercase",
-              opacity: "0.5",
+              display: "flex",
+              alignItems: "center",
+              flexDirection: "column",
+              width: "37.5rem",
             }}
           >
-            Lines of codes
-          </Typography>
-        </Box>
-        <Box
-          sx={{
-            display: "flex",
-            alignItems: "center",
-            flexDirection: "column",
-            width: "37.5rem",
-          }}
-        >
-          <Typography
+            <Typography
+              sx={{
+                fontFamily: "Work Sans, sans-serif",
+                color: "white",
+                fontSize: "5rem",
+                marginBottom: "1rem",
+              }}
+            >
+              <CountUp end={99} duration={5} />
+            </Typography>
+            <Typography
+              sx={{
+                fontFamily: "Work Sans, sans-serif",
+                color: "white",
+                fontSize: "1.5rem",
+                textTransform: "uppercase",
+                opacity: "0.5",
+              }}
+            >
+              number of projects
+            </Typography>
+          </Box>
+          <Box
             sx={{
-              fontFamily: "Work Sans, sans-serif",
-              color: "white",
-              fontSize: "5rem",
-              marginBottom: "1rem",
+              display: "flex",
+              alignItems: "center",
+              flexDirection: "column",
+              width: "37.5rem",
             }}
           >
-            <CountUp end={99} duration={5} />
-          </Typography>
-          <Typography
-            sx={{
-              fontFamily: "Work Sans, sans-serif",
-              color: "white",
-              fontSize: "1.5rem",
-              textTransform: "uppercase",
-              opacity: "0.5",
-            }}
-          >
-            number of projects
-          </Typography>
-        </Box>
-        <Box
-          sx={{
-            display: "flex",
-            alignItems: "center",
-            flexDirection: "column",
-            width: "37.5rem",
-          }}
-        >
-          <Typography
-            sx={{
-              fontFamily: "Work Sans, sans-serif",
-              color: "white",
-              fontSize: "5rem",
-              marginBottom: "1rem",
-            }}
-          >
-            <CountUp end={124} duration={5} />
-          </Typography>
-          <Typography
-            sx={{
-              fontFamily: "Work Sans, sans-serif",
-              color: "white",
-              fontSize: "1.5rem",
-              textTransform: "uppercase",
-              opacity: "0.5",
-            }}
-          >
-            number of clients
-          </Typography>
-        </Box>
+            <Typography
+              sx={{
+                fontFamily: "Work Sans, sans-serif",
+                color: "white",
+                fontSize: "5rem",
+                marginBottom: "1rem",
+              }}
+            >
+              <CountUp end={124} duration={5} />
+            </Typography>
+            <Typography
+              sx={{
+                fontFamily: "Work Sans, sans-serif",
+                color: "white",
+                fontSize: "1.5rem",
+                textTransform: "uppercase",
+                opacity: "0.5",
+              }}
+            >
+              number of clients
+            </Typography>
+          </Box>
+        </Container>
       </Box>
     </Box>
   );

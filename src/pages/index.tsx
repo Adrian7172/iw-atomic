@@ -6,6 +6,7 @@ import "../styles/global.css";
 import Slider from "../components/slider";
 import Cards from "../components/cardsgroup";
 import Images from "../components/imageGrid/ImageGrid";
+import Footer from "../components/footer/footer";
 
 
 
@@ -18,6 +19,8 @@ const Home = () => {
       <Cards />
       <Images />
       <Slider  slide ={"slide2"}/>
+      <Footer />
+      
     </Box>
   );
 };

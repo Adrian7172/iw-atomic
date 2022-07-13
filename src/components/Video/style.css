@@ -1,0 +1,10 @@
+.video{
+    width: 800px;
+    height: 500px;
+}
+
+.player{
+    width: max-content;
+    height: max-content;
+    background-color: inherit;
+}

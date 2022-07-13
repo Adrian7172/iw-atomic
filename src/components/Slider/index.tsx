@@ -43,7 +43,7 @@ const Slider = ({ slide }: { slide: string }) => {
     <Box
       sx={{
         maxWidth: "100%",
-        height: "50rem",
+        height: slide === "slide1" ? "60rem": "50rem",
         background: "inherit",
         marginTop: slide === "slide1" ? "15rem": "0",
         marginBottom: slide === "slide1" ? "10rem": "0",
