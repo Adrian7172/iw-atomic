@@ -13,8 +13,8 @@ const style = {
   top: "50%",
   left: "50%",
   transform: "translate(-50%, -50%)",
-  width: "max-content",
-  height: "max-content",
+  width: {xs: "90%", md: "80rem"},
+  height: "auto",
   background: "white",
   padding: "1rem"
 };
@@ -28,11 +28,12 @@ const Video = () => {
       <Box
         onClick={handleOpen}
         sx={{
-          position: "absolute",
-          background: "transparent",
+          position: {xs:"relative", md: "absolute"},
+          background:"transparent",
+          zIndex: 200,
           border: " 2px solid rgba(0,0,0,.1)",
-          right: "27.5rem",
-          top: "13.5rem",
+          right: {md: "27.5rem"},
+          top: {md: "13.5rem"},
           display: " grid",
           placeItems: "center",
           borderRadius: "50%",
@@ -44,8 +45,8 @@ const Video = () => {
             background: "transparent",
             width: "9rem",
             height: "9rem",
-            right: "27rem",
-            top: "13rem",
+            right: {md:"27rem"},
+            top: {md:"13rem"},
           },
         }}
       >

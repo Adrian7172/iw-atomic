@@ -9,19 +9,24 @@ const Section = () => {
       sx={{
         position: "relative",
         height: "max-content",
-        marginTop: "8.1rem",
+        marginTop: { xs: "3rem", md: "8.1rem" },
+        display: "flex",
+        flexDirection: "column-reverse",
+        alignItems: { xs: "center", md: "normal" },
       }}
     >
       <Box
         sx={{
           marginLeft: "2.1rem",
+          marginTop: { xs: "5rem", md: "0" },
+          width: { sx: "90%", md: "55rem" },
         }}
       >
         <Typography
           variant="h1"
           sx={{
             color: "#000",
-            width: "50rem",
+            width: "100%",
             fontSize: "5rem",
             fontWeight: "400",
             lineHeight: "1.5",
