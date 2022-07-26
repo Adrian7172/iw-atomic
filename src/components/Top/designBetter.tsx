@@ -9,7 +9,7 @@ const Section = () => {
       sx={{
         position: "relative",
         height: "max-content",
-        marginTop: { xs: "3rem", md: "8.1rem" },
+        marginTop: { xs: "15rem", md: "8.1rem" },
         display: "flex",
         flexDirection: "column-reverse",
         alignItems: { xs: "center", md: "normal" },
