@@ -19,7 +19,8 @@ const Section = () => {
         sx={{
           marginLeft: "2.1rem",
           marginTop: { xs: "5rem", md: "0" },
-          width: { sx: "90%", md: "55rem" },
+          width: { xs: "90%", md: "55rem" },
+          marginBottom: "20rem",
         }}
       >
         <Typography
@@ -27,7 +28,7 @@ const Section = () => {
           sx={{
             color: "#000",
             width: "100%",
-            fontSize: "5rem",
+            fontSize: {xs: "3rem",md:"5rem"},
             fontWeight: "400",
             lineHeight: "1.5",
             letterSpacing: "0.005rem",
@@ -40,7 +41,7 @@ const Section = () => {
         <Typography
           variant="h3"
           sx={{
-            width: "55rem",
+            width: "100%",
             fontSize: "1.8rem",
             fontWeight: "300",
             color: "#999",

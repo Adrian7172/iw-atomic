@@ -8,12 +8,11 @@ const Images = () => {
   return (
     <Box sx={{ flexGrow: 1 }}>
       <Grid container spacing={0}>
-        <Grid item xs={4}>
+        <Grid item xs={12} md={4}>
           <Box
             sx={{
               height: "50rem",
               position: "relative",
-
               backgroundImage:
                 "url(https://preview.colorlib.com/theme/atomic/images/xslider-2.jpg.pagespeed.ic.r9N2neKBEW.webp)",
               backgroundSize: "cover",
@@ -77,7 +76,7 @@ const Images = () => {
             </Box>
           </Box>
         </Grid>
-        <Grid item xs={8}>
+        <Grid item xs={12} md={8}>
           <Box
             sx={{
               position: "relative",
@@ -146,7 +145,7 @@ const Images = () => {
             </Box>
           </Box>
         </Grid>
-        <Grid item xs={8}>
+        <Grid item xs={12} md={8}>
           <Box
             sx={{
               position: "relative",
@@ -215,7 +214,7 @@ const Images = () => {
             </Box>
           </Box>
         </Grid>
-        <Grid item xs={4}>
+        <Grid item xs={12} md={4}>
           <Box
             sx={{
               position: "relative",
@@ -287,28 +286,31 @@ const Images = () => {
       <Box
         sx={{
           width: "100%",
-          height: "32rem",
+          height: {xs:"max-content",md: "32rem"},
           background: "#0389ff",
           display: "flex",
           alignItems: "center",
           justifyContent: "center",
+          padding: {xs:"5rem 0"}
         }}
       >
         <Container
           sx={{
             display: "flex",
+            flexDirection:{xs: "column", md: "row"},
             alignItems: "center",
             justifyContent: "space-between",
           }}
-        >
+          >
           <Box
             sx={{
               display: "flex",
               alignItems: "center",
               flexDirection: "column",
               width: "37.5rem",
+              marginBottom: {xs:"3rem", md: "0"}
             }}
-          >
+            >
             <Typography
               sx={{
                 fontFamily: "Work Sans, sans-serif",
@@ -327,7 +329,7 @@ const Images = () => {
                 textTransform: "uppercase",
                 opacity: "0.5",
               }}
-            >
+              >
               Lines of codes
             </Typography>
           </Box>
@@ -337,8 +339,9 @@ const Images = () => {
               alignItems: "center",
               flexDirection: "column",
               width: "37.5rem",
+              marginBottom: {xs:"3rem", md: "0"}
             }}
-          >
+            >
             <Typography
               sx={{
                 fontFamily: "Work Sans, sans-serif",
@@ -357,7 +360,7 @@ const Images = () => {
                 textTransform: "uppercase",
                 opacity: "0.5",
               }}
-            >
+              >
               number of projects
             </Typography>
           </Box>
@@ -367,6 +370,7 @@ const Images = () => {
               alignItems: "center",
               flexDirection: "column",
               width: "37.5rem",
+              marginBottom: {xs:"3rem", md: "0"}
             }}
           >
             <Typography

@@ -20,10 +20,11 @@ const Cards = () => {
         "A small river named Duden flows by their place and supplies it with the necessary regelialia.",
       BoxStyle: {
         textAlign: "center",
-        width: "35.5rem",
+        width: {xs:"90%",md:"35.5rem"},
         height: "max-content",
         boxSizing: "border-box",
         margin: "1rem",
+        marginBottom: "2rem",
       },
       iconStyle: {
         width: "6.2rem",
@@ -53,13 +54,14 @@ const Cards = () => {
       icon: IoInfiniteOutline,
       heading: "Infinite Posibilities",
       subHeading:
-        "A small river named Duden flows by their place and supplies it with the necessary regelialia.",
+      "A small river named Duden flows by their place and supplies it with the necessary regelialia.",
       BoxStyle: {
         textAlign: "center",
-        width: "35.5rem",
+        width: {xs:"90%",md:"35.5rem"},
         height: "max-content",
         boxSizing: "border-box",
         margin: "1rem",
+        marginBottom: "2rem",
       },
       iconStyle: {
         width: "7.2rem",
@@ -89,13 +91,14 @@ const Cards = () => {
       icon: AiOutlineLock,
       heading: "Good Security",
       subHeading:
-        "A small river named Duden flows by their place and supplies it with the necessary regelialia.",
+      "A small river named Duden flows by their place and supplies it with the necessary regelialia.",
       BoxStyle: {
         textAlign: "center",
-        width: "35.5rem",
+        width: {xs:"90%",md:"35.5rem"},
         height: "max-content",
         boxSizing: "border-box",
         margin: "1rem",
+        marginBottom: "2rem",
       },
       iconStyle: {
         width: "7.2rem",
@@ -127,13 +130,14 @@ const Cards = () => {
       icon: IoIosNutrition,
       heading: "Orange for Carrots",
       subHeading:
-        "A small river named Duden flows by their place and supplies it with the necessary regelialia.",
+      "A small river named Duden flows by their place and supplies it with the necessary regelialia.",
       BoxStyle: {
         textAlign: "center",
-        width: "35.5rem",
+        width: {xs:"90%",md:"35.5rem"},
         height: "max-content",
         boxSizing: "border-box",
         margin: "1rem",
+        marginBottom: "2rem",
       },
       iconStyle: {
         width: "7.2rem",
@@ -159,17 +163,18 @@ const Cards = () => {
       },
     },
     {
-      id: 1,
+      id: 2,
       icon: IoBulbOutline,
       heading: "Intuitive Thinking",
       subHeading:
-        "A small river named Duden flows by their place and supplies it with the necessary regelialia.",
+      "A small river named Duden flows by their place and supplies it with the necessary regelialia.",
       BoxStyle: {
         textAlign: "center",
-        width: "35.5rem",
+        width: {xs:"90%",md:"35.5rem"},
         height: "max-content",
         boxSizing: "border-box",
         margin: "1rem",
+        marginBottom: "2rem",
       },
       iconStyle: {
         width: "7.2rem",
@@ -195,17 +200,18 @@ const Cards = () => {
       },
     },
     {
-      id: 1,
+      id: 3,
       icon: IoVideocamOutline,
       heading: "Play Video",
       subHeading:
-        "A small river named Duden flows by their place and supplies it with the necessary regelialia.",
+      "A small river named Duden flows by their place and supplies it with the necessary regelialia.",
       BoxStyle: {
         textAlign: "center",
-        width: "35.5rem",
+        width: {xs:"90%",md:"35.5rem"},
         height: "max-content",
         boxSizing: "border-box",
         margin: "1rem",
+        marginBottom: "2rem",
       },
       iconStyle: {
         width: "7.2rem",
@@ -252,6 +258,8 @@ const Cards = () => {
             width: "100%",
             height: "max-content",
             display: "flex",
+            flexDirection: {xs: "column",md: "row"},
+            alignItems: "center",
             justifyContent: "space-between",
             marginBottom: "5rem",
           }}
@@ -265,6 +273,8 @@ const Cards = () => {
             width: "100%",
             height: "max-content",
             display: "flex",
+            flexDirection: {xs: "column",md: "row"},
+            alignItems: "center",
             justifyContent: "space-between",
           }}
         >

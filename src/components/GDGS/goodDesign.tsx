@@ -21,12 +21,13 @@ const Section = () => {
           fontFamily: "Work Sans, sans-serif",
           fontWeight: "400",
           marginBottom: "4.8rem",
+          textAlign: "center"
         }}
       >
         Good Design is a Good Start
       </Typography>
       <Grid container rowSpacing={3} columnSpacing={4}>
-        <Grid item xs={6}>
+        <Grid item xs={12} md={6}>
           <Typography
             sx={{
               fontFamily: "Work Sans, sans-serif",
@@ -49,7 +50,7 @@ const Section = () => {
             right at the coast of the Semantics, a large language ocean.
           </Typography>
         </Grid>
-        <Grid item xs={6}>
+        <Grid item xs={12} md={6}>
           <Typography
             sx={{
               fontSize: "1.52rem",

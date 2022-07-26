@@ -10,10 +10,11 @@ const Main = () => {
     <Box
       sx={{
         width: "100%",
-        height: "80rem",
+        height: "max-content",
         backgroundImage:
           "url(https://preview.colorlib.com/theme/atomic/images/xslider-1.jpg.pagespeed.ic.REhBBaqspE.webp)",
         backgroundSize: "cover",
+        
       }}
     >
       <Navbar />

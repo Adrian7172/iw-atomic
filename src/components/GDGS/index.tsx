@@ -9,7 +9,7 @@ const Main = () => {
     <Box
       sx={{
         width: "100%",
-        height: "80rem",
+        height: "max-content",
         background: "inherit",
       }}
     >

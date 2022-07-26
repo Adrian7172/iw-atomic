@@ -88,8 +88,9 @@ export const Navbar = () => {
         position="static"
         elevation={0}
         sx={{
-          padding: "4rem 0",
-          background: "transparent",
+          padding: { xs: "1rem 0", md: "4rem 0" },
+          background: { xs: "#2f9eff", md: "transparent" },
+          marginBottom: {xs: "10rem", md:"0"}
         }}
       >
         <Container maxWidth="lg">
@@ -108,7 +109,7 @@ export const Navbar = () => {
               component="div"
               sx={{
                 flexGrow: 1,
-                color: "#000",
+                color: {xs: "white",md:"#000"},
                 fontSize: "2.2rem",
                 fontWeight: "400",
                 marginBottom: "0.5rem",
@@ -132,7 +133,7 @@ export const Navbar = () => {
                     }}
                     key={id}
                     sx={{
-                      display: "flex",
+                      display: { xs: "none", md: "flex" },
                       alignItems: "center",
                       width: "max-content",
                       marginLeft: "1.6rem",
@@ -305,7 +306,8 @@ export const Navbar = () => {
                                                 height: "max-content",
                                                 top: "7rem",
                                                 marginLeft: "15rem",
-                                                boxShadow: "0 1px 2px 0 rgb(0 0 0 / 20%)",
+                                                boxShadow:
+                                                  "0 1px 2px 0 rgb(0 0 0 / 20%)",
                                                 borderRadius: ".4rem",
                                                 padding: "2rem 1.5rem",
                                               }}

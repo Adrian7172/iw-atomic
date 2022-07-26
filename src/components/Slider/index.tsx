@@ -43,9 +43,8 @@ const Slider = ({ slide }: { slide: string }) => {
     <Box
       sx={{
         maxWidth: "100%",
-        height: slide === "slide1" ? "60rem": "50rem",
-        background: "inherit",
-        marginTop: slide === "slide1" ? "15rem": "0",
+        height: "max-content",
+        marginTop: slide === "slide1" ? "5rem": "0",
         marginBottom: slide === "slide1" ? "10rem": "0",
       }}
     >
@@ -57,9 +56,9 @@ const Slider = ({ slide }: { slide: string }) => {
               maxWidth="xl"
               sx={{
                 position: "relative",
-                height: "100%",
+                height: slide === "slide1" ? "60rem": "50rem",
                 backgroundImage: `url(${data})`,
-                backgroundSize: "100%",
+                backgroundSize: "cover",
                 display: current === index ? "grid" : "none",
                 transitionDelay: "3s",
                 opacity: current === index ? "1" : "0",
@@ -197,7 +196,8 @@ const Slider = ({ slide }: { slide: string }) => {
               }}>“</Typography>
               <Typography
               sx={{
-                height: "18rem",
+                height: "max-content",
+                marginBottom: "5rem",
                 fontSize: "1.8rem",
                 lineHeight: "2",
                 fontFamily: "Work Sans, sans-serif",
